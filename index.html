@@ -4,31 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html,
+      body {
+        /* height 이 있어야 align-items에서 상하 정렬이 된다. */
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        background: gray;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background: pink;
+      }
+      .top {
+        width: 50px;
+        height: 50px;
+        /* background: skyblue; */
+        border-radius: 25px;
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+      }
+    </style>
   </head>
   <body>
-    <div class="header">
-      <div class="container wrap">
-        <h1>
-          <a href="#"><img src="img/logo.png" alt="네마블재단" /></a>
-        </h1>
-        <nav class="menuWrap">
-          <ul>
-            <li><a href="#" class="navMenu">재단소개</a></li>
-            <li><a href="#" class="navMenu">재단활동</a></li>
-            <li><a href="#" class="navMenu">재단소식</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="visual">
-      <div class="container">
-        <h2 class="title">게임아카데미</h2>
-        <h2 class="sub">미래의 꿈 게임에 담다</h2>
-      </div>
-    </div>
-    <div class="container cont01"></div>
+    <div class="box">1</div>
+    <div class="top">top</div>
   </body>
 </html>

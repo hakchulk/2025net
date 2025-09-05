@@ -2,16 +2,15 @@
 .header {
   background: white;
   position: fixed;
-
   /* scroll bar 없애기 */
   width: 100%;
 }
 
 .header .wrap {
+  height: 76px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 76px;
 }
 
 .header h1 img {
@@ -22,6 +21,12 @@
   display: flex;
   gap: 100px;
 }
+
+/* .scrollWrap {
+  margin-top: 76px;
+  height: calc(100vh - 76px);
+  overflow-y: auto; 
+} */
 
 /* visual */
 .visual {
@@ -37,9 +42,60 @@
   background-size: cover;
 }
 
-/* content */
-.cont01 {
-  height: 300px;
+.visual .container {
+  left: 40px;
 }
 
+/* content */
+
+.cont01 {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sub-area {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: #ffd44a;
+}
+
+.cont01-02 {
+  padding-left: 624px;
+}
+
+.cont02 {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.thumb {
+  width: 384px;
+  height: 450px;
+}
+
+.thumb img {
+  transition: 0.2s;
+}
+.thumb:hover img {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+}
+.txtbox {
+  padding-left: 15px;
+}
+
+.gt {
+  display: inline-block;
+  background: url(../img/gt.png) no-repeat right 10% top 20%;
+}
+
+.cont2item {
+  /* position: relative; */
+}
 /* footer  */
