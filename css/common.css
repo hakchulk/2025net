@@ -29,7 +29,7 @@ p.txt3 {
 }
 
 p.txt5 {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 button {
@@ -42,7 +42,7 @@ a.navMenu {
 }
 
 .container {
-  width: 1216px;
+  width: 1280px;
   margin: 0 auto;
   position: relative;
 }

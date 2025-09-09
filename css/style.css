@@ -4,6 +4,7 @@
   position: fixed;
   /* scroll bar 없애기 */
   width: 100%;
+  z-index: 999;
 }
 
 .header .wrap {
@@ -134,10 +135,14 @@ cont03 {
 }
 
 .cont04 {
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 160px;
   background-color: #f7f8f9;
   margin-top: 160px;
 }
 
+.cont04 .title {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
 /* footer  */
