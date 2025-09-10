@@ -16,6 +16,7 @@
     <style>
       .cont04 .swiper-wrapper {
         display: flex;
+        padding: 20px 20px;
       }
       .cont04 .swiper .slide {
         display: flex;
@@ -23,7 +24,7 @@
         height: 466px;
         border-radius: 4px;
         background: white;
-        margin: 0 20px;
+        /* margin: 0 20px; */
       }
 
       .cont04 .swiper .textWrap {
@@ -43,6 +44,14 @@
         bottom: 0px;
         width: 296px;
         color: rgba(30, 30, 30, 0.4);
+      }
+      .cont04 .slide {
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .cont04 .slide:hover {
+        transform: translate(0px, -5px);
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
       }
     </style>
   </head>
@@ -139,10 +148,10 @@
       </div>
       <div class="container cont04">
         <h3 class="tit title">재단소식</h3>
-        <div class="swiper mySwiper">
+        <div class="swiper SwiperBBS">
           <div class="swiper-wrapper">
             <script>
-              console.log(writeMainBBS());
+              // console.log(writeMainBBS());
               document.querySelector(".cont04 .swiper-wrapper").innerHTML =
                 writeMainBBS();
             </script>
@@ -165,7 +174,7 @@
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".SwiperBBS", {
         slidesPerView: 3.5,
         spaceBetween: 30,
       });

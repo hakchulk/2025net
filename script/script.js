@@ -45,7 +45,7 @@ function writeMainBBS() {
                   item.cate
                 } &middot; ${item.dt.toLocaleDateString("ko-KR")}</p>
               </div>
-            </div>    
+            </div>  
     `;
   }
   return str;
