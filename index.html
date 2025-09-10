@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="script/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <style>
       .cont04 .swiper-wrapper {
         display: flex;
-        flex-wrap: wrap;
       }
       .cont04 .swiper .slide {
         display: flex;
-        width: 500px;
+        width: 400px;
         height: 466px;
         border-radius: 4px;
         background: white;
@@ -138,8 +141,13 @@
         <h3 class="tit title">재단소식</h3>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
+            <script>
+              console.log(writeMainBBS());
+              document.querySelector(".cont04 .swiper-wrapper").innerHTML =
+                writeMainBBS();
+            </script>
             <!-- slide 1 -->
-            <div class="swiper-slide slide">
+            <!-- <div class="swiper-slide slide">
               <div class="textWrap">
                 <h6 class="tit">0 2024년 기부금품 사용내역</h6>
                 <p class="txt2 summary">
@@ -149,49 +157,18 @@
                 </p>
                 <p class="txt5">공지사항&middot; 2025.08.22</p>
               </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide slide">
-              <div class="textWrap">
-                <h6 class="tit">1 2024년도 결산서류 등의 공시</h6>
-                <p class="txt2 summary">
-                  재단법인 넷마블문화재단은 ‘상속세 및 증여세법
-                  제50조의3(공익법인등의 결산서류등의 공시의무)’에 의거 결산서류
-                  등을 공시합니다. 해당 내역은 국세청 홈택스(hometax.go.kr)
-                  공익법인결산공시 공개시스템에서도 확인하실 수 있습니다.
-                </p>
-                <p class="txt5">공지사항&middot; 2025.04.30</p>
-              </div>
-            </div>
-            <!-- slide 3 -->
-            <div class="swiper-slide slide">
-              <div class="textWrap">
-                <h6 class="tit">2 2024년도 결산서류 등의 공시</h6>
-                <p class="txt2 summary">
-                  재단법인 넷마블문화재단은 ‘상속세 및 증여세법
-                  제50조의3(공익법인등의 결산서류등의 공시의무)’에 의거 결산서류
-                  등을 공시합니다. 해당 내역은 국세청 홈택스(hometax.go.kr)
-                  공익법인결산공시 공개시스템에서도 확인하실 수 있습니다.
-                </p>
-                <p class="txt5">공지사항&middot; 2025.04.30</p>
-              </div>
-            </div>
-            <!-- slide 4 -->
-            <div class="swiper-slide slide">
-              <div class="textWrap">
-                <h6 class="tit">3 2024년도 결산서류 등의 공시</h6>
-                <p class="txt2 summary">
-                  재단법인 넷마블문화재단은 ‘상속세 및 증여세법
-                  제50조의3(공익법인등의 결산서류등의 공시의무)’에 의거 결산서류
-                  등을 공시합니다. 해당 내역은 국세청 홈택스(hometax.go.kr)
-                  공익법인결산공시 공개시스템에서도 확인하실 수 있습니다.
-                </p>
-                <p class="txt5">공지사항&middot; 2025.04.30</p>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+      });
+    </script>
   </body>
 </html>

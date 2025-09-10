@@ -34,5 +34,19 @@ function writeMainBBS() {
   var str = "";
   for (var i = 0; i < aBBS.length; i++) {
     var item = aBBS[i];
+    str += `
+            <div class="swiper-slide slide">
+              <div class="textWrap">
+                <h6 class="tit">${item.title}</h6>
+                <p class="txt2 summary">
+                  ${item.content}
+                </p>
+                <p class="txt5">${
+                  item.cate
+                } &middot; ${item.dt.toLocaleDateString("ko-KR")}</p>
+              </div>
+            </div>    
+    `;
   }
+  return str;
 }
