@@ -30,22 +30,6 @@
 } */
 
 /* visual */
-.visual {
-  height: 100vh;
-  min-height: 700px;
-  background: pink;
-  background-image: url(../img/img01_01.jpg);
-  display: flex;
-  align-items: center;
-  color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.visual .container {
-  left: 40px;
-}
 
 /* content */
 
@@ -129,7 +113,7 @@ h3::after {
   background: url(../img/imgi_32_purpose.e6f7b36.jpg) no-repeat 0 0;
 }
 
-cont03 {
+.cont03 {
   height: 462px;
   margin-top: 160px;
 }
@@ -144,5 +128,45 @@ cont03 {
 .cont04 .title {
   padding-left: 20px;
   padding-bottom: 50px;
+}
+
+.cont04 .swiper-wrapper {
+  display: flex;
+  padding: 20px 20px;
+}
+.cont04 .swiper .slide {
+  display: flex;
+  width: 400px;
+  height: 466px;
+  border-radius: 4px;
+  background: white;
+  /* margin: 0 20px; */
+}
+
+.cont04 .swiper .textWrap {
+  margin: 25px;
+  position: relative;
+}
+.cont04 .swiper .textWrap .sub {
+  margin-bottom: 20px;
+}
+.cont04 .swiper .textWrap .btnWrap {
+  width: 450px;
+  text-align: right;
+}
+.textWrap p.txt5 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 296px;
+  color: rgba(30, 30, 30, 0.4);
+}
+.cont04 .slide {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.cont04 .slide:hover {
+  transform: translate(0px, -5px);
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
 }
 /* footer  */

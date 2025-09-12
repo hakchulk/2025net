@@ -14,48 +14,39 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <style>
-      .cont04 .swiper-wrapper {
-        display: flex;
-        padding: 20px 20px;
-      }
-      .cont04 .swiper .slide {
-        display: flex;
-        width: 400px;
-        height: 466px;
-        border-radius: 4px;
-        background: white;
-        /* margin: 0 20px; */
+      .visual {
+        background: pink;
       }
 
-      .cont04 .swiper .textWrap {
-        margin: 25px;
-        position: relative;
+      .visual .vslide {
+        height: 100vh;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
-      .cont04 .swiper .textWrap .sub {
-        margin-bottom: 20px;
+
+      .visual .vslide1 {
+        background-image: url(../img/img01_01.jpg);
       }
-      .cont04 .swiper .textWrap .btnWrap {
-        width: 450px;
-        text-align: right;
+      .visual .vslide2 {
+        background-image: url(../img/img01_02.jpg);
       }
-      .textWrap p.txt5 {
+      .visual .textWrap {
+        color: white;
+      }
+      .visual .btnWrap {
         position: absolute;
-        left: 0px;
-        bottom: 0px;
-        width: 296px;
-        color: rgba(30, 30, 30, 0.4);
-      }
-      .cont04 .slide {
-        transition: 0.2s;
-        cursor: pointer;
-      }
-      .cont04 .slide:hover {
-        transform: translate(0px, -5px);
-        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+        right: 100px;
+        bottom: 100px;
+        z-index: 999;
       }
     </style>
   </head>
   <body>
+    <!-- header -->
     <div class="header">
       <div class="container wrap">
         <h1>
@@ -70,93 +61,111 @@
         </nav>
       </div>
     </div>
-    <div class="scrollWrap">
-      <div class="visual">
-        <div class="container">
-          <h2 class="title">어깨동무문고</h2>
-          <h2 class="sub">다름을 이해하는 모두의 동화</h2>
+
+    <div class="visual">
+      <div class="swiper visualSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide vslide vslide1">
+            <div class="container textWrap">
+              <h2 class="title">어깨동무문고</h2>
+              <h2 class="sub">다름을 이해하는 모두의 동화</h2>
+            </div>
+          </div>
+          <div class="swiper-slide vslide vslide2">
+            <div class="container textWrap">
+              <h2 class="title">전국장애학생<br />e페스티벌</h2>
+              <h2 class="sub">게임 안에서 하나 되는 모두의 축제</h2>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container cont01">
+      <div class="btnWrap">
+        <span class="viewFra">번호</span>
+        <button class="preBtn">&lt;</button>
+        <button class="nextBtn">&gt;</button>
+      </div>
+    </div>
+
+    <div class="container cont01">
+      <div>
         <div>
-          <div>
-            <h3 class="tit">
-              문화를 만들고 인재를 키우고<br />
-              마음을 나눕니다
-            </h3>
-            <!-- <div class="sub-area"></div> -->
-          </div>
-          <div class="cont01-02">
-            <p class="txt1">
-              넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을
-              높여 가고자<br />
-              다양한 공익 활동을 전개해 나가고 있습니다.
-            </p>
-          </div>
+          <h3 class="tit">
+            문화를 만들고 인재를 키우고<br />
+            마음을 나눕니다
+          </h3>
+          <!-- <div class="sub-area"></div> -->
+        </div>
+        <div class="cont01-02">
+          <p class="txt1">
+            넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을
+            높여 가고자<br />
+            다양한 공익 활동을 전개해 나가고 있습니다.
+          </p>
         </div>
       </div>
-      <div class="container cont02">
-        <div class="cont2item">
-          <div class="thumb">
-            <img src="img/imgi_28_link01.8c7a40e.jpg" alt="" />
-          </div>
-          <div class="txtbox">
-            <!-- &gt; -->
-            <h6 class="tit">문화 만들기 &gt;</h6>
-            <p class="txt2">
-              게임을 기반으로 다양한 문화적 가치를 공유하고 누구나
-            </p>
-            <p class="txt2">
-              즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.
-            </p>
-          </div>
+    </div>
+    <div class="container cont02">
+      <div class="cont2item">
+        <div class="thumb">
+          <img src="img/imgi_28_link01.8c7a40e.jpg" alt="" />
         </div>
-        <div class="cont2item">
-          <div class="thumb">
-            <img src="img/imgi_30_link02.b7f7bba.jpg" alt="" />
-          </div>
-          <div class="txtbox">
-            <h6 class="tit">인재 키우기 &gt;</h6>
-            <p class="txt2">
-              미래 문화 산업을 이끌어 갈 가능성 있는 인재들을 발굴하고
-            </p>
-            <p class="txt2">체계적인 성장 기회를 지원합니다.</p>
-          </div>
-        </div>
-        <div class="cont2item">
-          <div class="thumb">
-            <img src="img/imgi_31_link03.73d78ef.jpg" alt="" />
-          </div>
-          <div class="txtbox">
-            <h6 class="tit">마음 나누기 &gt;</h6>
-            <p class="txt2">
-              나눔이 가진 영향력과 가치를 알리고 쉽게 동참할 수 있는
-            </p>
-            <p class="txt2">
-              기회를 제공하여 모두가 즐거운 나눔 문화를 확산해 갑니다.
-            </p>
-          </div>
+        <div class="txtbox">
+          <!-- &gt; -->
+          <h6 class="tit">문화 만들기 &gt;</h6>
+          <p class="txt2">
+            게임을 기반으로 다양한 문화적 가치를 공유하고 누구나
+          </p>
+          <p class="txt2">
+            즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.
+          </p>
         </div>
       </div>
-      <div class="container cont03">
-        <div class="cont03-01">
-          <h4 class="tit">우리는 <b>문화적 가치를 확산</b>하여 우리 사회의</h4>
-          <h4 class="tit">미래 경쟁력을 높여갑니다</h4>
-          <p class="tit2">주요목적</p>
+      <div class="cont2item">
+        <div class="thumb">
+          <img src="img/imgi_30_link02.b7f7bba.jpg" alt="" />
         </div>
-        <div class="cont03-02"></div>
+        <div class="txtbox">
+          <h6 class="tit">인재 키우기 &gt;</h6>
+          <p class="txt2">
+            미래 문화 산업을 이끌어 갈 가능성 있는 인재들을 발굴하고
+          </p>
+          <p class="txt2">체계적인 성장 기회를 지원합니다.</p>
+        </div>
       </div>
-      <div class="container cont04">
-        <h3 class="tit title">재단소식</h3>
-        <div class="swiper SwiperBBS">
-          <div class="swiper-wrapper">
-            <script>
-              // console.log(writeMainBBS());
-              document.querySelector(".cont04 .swiper-wrapper").innerHTML =
-                writeMainBBS();
-            </script>
-            <!-- slide 1 -->
-            <!-- <div class="swiper-slide slide">
+      <div class="cont2item">
+        <div class="thumb">
+          <img src="img/imgi_31_link03.73d78ef.jpg" alt="" />
+        </div>
+        <div class="txtbox">
+          <h6 class="tit">마음 나누기 &gt;</h6>
+          <p class="txt2">
+            나눔이 가진 영향력과 가치를 알리고 쉽게 동참할 수 있는
+          </p>
+          <p class="txt2">
+            기회를 제공하여 모두가 즐거운 나눔 문화를 확산해 갑니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container cont03">
+      <div class="cont03-01">
+        <h4 class="tit">우리는 <b>문화적 가치를 확산</b>하여 우리 사회의</h4>
+        <h4 class="tit">미래 경쟁력을 높여갑니다</h4>
+        <p class="tit2">주요목적</p>
+      </div>
+      <div class="cont03-02"></div>
+    </div>
+    <div class="container cont04">
+      <h3 class="tit title">재단소식</h3>
+      <div class="swiper SwiperBBS">
+        <div class="swiper-wrapper">
+          <script>
+            // console.log(writeMainBBS());
+            document.querySelector(".cont04 .swiper-wrapper").innerHTML =
+              writeMainBBS();
+          </script>
+          <!-- slide 1 -->
+          <!-- <div class="swiper-slide slide">
               <div class="textWrap">
                 <h6 class="tit">0 2024년 기부금품 사용내역</h6>
                 <p class="txt2 summary">
@@ -167,13 +176,25 @@
                 <p class="txt5">공지사항&middot; 2025.08.22</p>
               </div>
             </div> -->
-          </div>
         </div>
       </div>
     </div>
+
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      new Swiper(".visualSwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".nextBtn",
+          prevEl: ".preBtn",
+        },
+        pagination: {
+          el: ".viewFra",
+          type: "fraction",
+        },
+      });
+
       var swiper = new Swiper(".SwiperBBS", {
         slidesPerView: 3.5,
         spaceBetween: 30,
